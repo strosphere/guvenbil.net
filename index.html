@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CASPER - Güven Bilgisayar ve Yazılım Hizmetleri | Vakfıkebir</title>
+  <meta name="description" content="Casper Yetkili Servis - Güven Bilgisayar ve Yazılım Hizmetleri. Bilgisayar/Laptop servis, bakım, format, parça değişimi. Vakfıkebir/Trabzon. 0462 841 39 00" />
+  <style>
+    :root { --bg:#0b1220; --card:#111a2e; --text:#e9eefc; --muted:#b8c2e0; --accent:#ff6a00; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial; background: linear-gradient(180deg,var(--bg),#070b14); color: var(--text); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 60px; }
+    .hero { padding: 26px; background: radial-gradient(1200px 500px at 10% 0%, #1a2a55 0%, var(--card) 55%, #0d1426 100%); border:1px solid rgba(255,255,255,.08); border-radius: 18px; }
+    h1 { margin:0 0 8px; font-size: 30px; }
+    .sub { margin:0; color: var(--muted); line-height: 1.5; }
+    .badges { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .badge { padding:8px 10px; border-radius: 999px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); color: var(--muted); font-size: 13px;}
+    .grid { margin-top: 18px; display:grid; grid-template-columns: 1.2fr .8fr; gap: 14px; }
+    @media (max-width: 860px){ .grid { grid-template-columns: 1fr; } }
+    .card { background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 18px; }
+    .card h2 { margin:0 0 10px; font-size: 18px; }
+    ul { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.7; }
+    .ctaRow { display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;}
+    a.btn { text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding: 12px 14px; border-radius: 12px; font-weight: 700; border:1px solid rgba(255,255,255,.12); }
+    .btn.primary { background: var(--accent); color:#1b0c00; border-color: rgba(0,0,0,.1); }
+    .btn.ghost { background: rgba(255,255,255,.06); color: var(--text); }
+    .kv { color: var(--muted); line-height: 1.7; }
+    .kv b { color: var(--text); }
+    iframe { width:100%; height: 280px; border:0; border-radius: 14px; }
+    footer { margin-top: 16px; color: rgba(255,255,255,.55); font-size: 13px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>CASPER - Güven Bilgisayar ve Yazılım Hizmetleri</h1>
+      <p class="sub">Vakfıkebir / Trabzon • Teknik Servis</p>
+
+      <div class="badges">
+        <div class="badge">20+ yıl tecrübe</div>
+        <div class="badge">Bilgisayar / Laptop</div>
+        <div class="badge">Yazılım • Donanım</div>
+        <div class="badge">Hızlı teslim</div>
+      </div>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="tel:+904628413900">📞 Hemen Ara: 0462 841 39 00</a>
+        <a class="btn ghost" href="https://wa.me/905436546259" target="_blank">💬 WhatsApp</a>
+        <a class="btn ghost" href="https://www.google.com/maps?q=41.04722,39.27877" target="_blank">📍 Yol Tarifi</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Hizmetler</h2>
+        <ul>
+          <li>Arıza tespiti / onarım</li>
+          <li>Format – Windows kurulumu – sürücü & performans</li>
+          <li>SSD / RAM yükseltme, parça değişimi</li>
+          <li>Fan/termal bakım, ısınma sorunları</li>
+          <li>Veri kurtarma (duruma göre)</li>
+          <li>Ağ / kurulum desteği</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>İletişim</h2>
+        <div class="kv">
+          <div><b>Telefon:</b> 0462 841 39 00</div>
+          <div><b>WhatsApp:</b> +90 543 654 62 59</div>
+          <div><b>Adres:</b> Kemaliye Mah., Hacı Ziya Habiboğlu Cd. No:20/A, 61400 Vakfıkebir/Trabzon</div>
+          <div><b>Çalışma Saatleri:</b> Pazartesi–Cumartesi: 09:00–19:00 • Pazar: Kapalı</div>
+        </div>
+      </div>
+
+      <div class="card" style="grid-column: 1 / -1;">
+        <h2>Harita</h2>
+        <iframe
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Kemaliye%20Mahallesi%20Hac%C4%B1%20Ziya%20Habibo%C4%9Flu%20Cd.%20No%3A20%2FA%20Vakf%C4%B1kebir%20Trabzon&output=embed">
+        </iframe>
+      </div>
+    </div>
+
+    <footer>© <span id="year"></span> Güven Bilgisayar • guvenbil.net</footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
